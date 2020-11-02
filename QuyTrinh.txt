@@ -1,0 +1,24 @@
+Quy trình: [Team Explorer]
+Trên origin git sẽ có 2 nhánh chính là: master và master_test
+[CHÚ Ý: MỌI NGƯỜI CODE XONG MERGE VÀO MASTER_TEST LUÔN NHÉ]
+VÀ TRƯỚC KHI CODE THÌ NHỚ PULL CÁI MASTER_TEST NHÉ.
+Mỗi người sẽ code trên branch riêng của mình, cách tạo branch: Chuột phải cái master trên origin ->
+Fetch, sau đó chọn “new local branch from”… Gõ tên branch mình tạo và chọn Create Branch
+Sau khi code xong 1 chức năng, chạy thấy OK rồi thì commit and sync branch đó.
+Tiếp theo. CheckOut master_test, Chọn Fetch và Pull (Để đảm bảo code trên master_test là mới
+nhất).
+Sau đó chọn “Merge from” 
+Mục “Merge from branch”, chọn đúng branch mình vừa code và bấm Merge. 
+Sau đó, bấm vào hình “ngôi nhà” trên TeamExplorer, chọn Sync
+Xong.
+Note; CẤM ĐỤNG VÀO MASTER NHÉ ) 
+TÀI LIỆU HƯỚNG DẪN CODE
+
+Hiện tại mới hướng dẫn thôi, để hiểu luồng chạy của App
+Tất cả các form đều là singleton nhé. Nghĩa là nó static
+Không cho phép tắt app từ các form màn hình quản lý của mình
+
+VỀ PHẦN SQL. Mỗi người tạo cho mình 1 file SQL. Sau đó để vào
+CuaHangThoiTrang/SQL.
+Mọi Proc sẽ được viết tại đây, để cho người khác vào lấy mà chạy.
+Việc này để cho db đồng bộ đc với nhau, tránh lỗi  
