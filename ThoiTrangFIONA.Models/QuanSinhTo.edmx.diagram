@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b65794e942604ee5bd05cfac77763b68" Name="Diagram1">
+        <EntityTypeShape EntityType="db_QuanSinhToModel.BanggiaModel" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.ChitietHoadonNhapNguyenlieuModel" Width="1.5" PointX="8.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.ChitietHoadonxuatModel" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.ChitietSanphamModel" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.HoadonNhapNguyenlieuModel" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.HoadonxuatModel" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.KhuyenmaiModel" Width="1.5" PointX="5.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.LoaiNguyenlieuModel" Width="1.5" PointX="3.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.LoaiSanphamModel" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.NguoidungModel" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.NguyenlieuModel" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.PhanquyenModel" Width="1.5" PointX="8" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.QuyenModel" Width="1.5" PointX="5.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_QuanSinhToModel.SanphamModel" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblBanggia_iSanphamID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblChitietHoadonnhap_iHoadonnhapID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblChitietHoadonnhap_inguyenlieuID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblChitietHoadonxuat_iHoadonxuatID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblChitietHoadonxuat_iSanphamID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_ChitietSanpham_Nguyenlieu_iNguyenlieuID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_ChitietSanpham_Sanpham_iSanphamID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblHoadonnhap_iNguoidungID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblHoadonxuat_iNguoidungID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblKhuyenmai_iSanphamID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblNguyenlieu_iLoaiNguyenlieuID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblSanpham_iLoaiSanphamID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblPhanquyen_iNguoidungID" ManuallyRouted="false" />
+        <AssociationConnector Association="db_QuanSinhToModel.FK_tblPhanquyen_iQuyenID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

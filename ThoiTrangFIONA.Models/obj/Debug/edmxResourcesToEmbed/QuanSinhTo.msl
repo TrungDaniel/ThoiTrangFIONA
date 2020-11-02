@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_QuanSinhToModelStoreContainer" CdmEntityContainer="db_QuanSinhToEntities">
+    <EntitySetMapping Name="BanggiaModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.BanggiaModel">
+        <MappingFragment StoreEntitySet="tblBanggia">
+          <ScalarProperty Name="PK_iBanggiaID" ColumnName="PK_iBanggiaID" />
+          <ScalarProperty Name="mGia" ColumnName="mGia" />
+          <ScalarProperty Name="tNgaybatdauapdung" ColumnName="tNgaybatdauapdung" />
+          <ScalarProperty Name="FK_iSanphamID" ColumnName="FK_iSanphamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChitietHoadonNhapNguyenlieuModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.ChitietHoadonNhapNguyenlieuModel">
+        <MappingFragment StoreEntitySet="tblChitietHoadonNhapNguyenlieu">
+          <ScalarProperty Name="PK_iChitietHoadonNhapNguyenlieuID" ColumnName="PK_iChitietHoadonNhapNguyenlieuID" />
+          <ScalarProperty Name="FK_iHoadonNhapNguyenlieuID" ColumnName="FK_iHoadonNhapNguyenlieuID" />
+          <ScalarProperty Name="FK_iNguyenlieuID" ColumnName="FK_iNguyenlieuID" />
+          <ScalarProperty Name="iSoluong" ColumnName="iSoluong" />
+          <ScalarProperty Name="mGia" ColumnName="mGia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChitietHoadonxuatModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.ChitietHoadonxuatModel">
+        <MappingFragment StoreEntitySet="tblChitietHoadonxuat">
+          <ScalarProperty Name="PK_iChitietHoadonxuatID" ColumnName="PK_iChitietHoadonxuatID" />
+          <ScalarProperty Name="FK_iHoadonxuatID" ColumnName="FK_iHoadonxuatID" />
+          <ScalarProperty Name="FK_iSanphamID" ColumnName="FK_iSanphamID" />
+          <ScalarProperty Name="iSoluong" ColumnName="iSoluong" />
+          <ScalarProperty Name="mGia" ColumnName="mGia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChitietSanphamModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.ChitietSanphamModel">
+        <MappingFragment StoreEntitySet="tblChitietSanpham">
+          <ScalarProperty Name="PK_iChitietSanphamID" ColumnName="PK_iChitietSanphamID" />
+          <ScalarProperty Name="FK_iSanphamID" ColumnName="FK_iSanphamID" />
+          <ScalarProperty Name="FK_iNguyenlieuID" ColumnName="FK_iNguyenlieuID" />
+          <ScalarProperty Name="fSoluong" ColumnName="fSoluong" />
+          <ScalarProperty Name="sGhichu" ColumnName="sGhichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoadonNhapNguyenlieuModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.HoadonNhapNguyenlieuModel">
+        <MappingFragment StoreEntitySet="tblHoadonNhapNguyenlieu">
+          <ScalarProperty Name="PK_iHoadonNhapNguyenlieuID" ColumnName="PK_iHoadonNhapNguyenlieuID" />
+          <ScalarProperty Name="tNgaylap" ColumnName="tNgaylap" />
+          <ScalarProperty Name="sGhichu" ColumnName="sGhichu" />
+          <ScalarProperty Name="FK_iNguoidungID" ColumnName="FK_iNguoidungID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoadonxuatModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.HoadonxuatModel">
+        <MappingFragment StoreEntitySet="tblHoadonxuat">
+          <ScalarProperty Name="PK_iHoadonxuatID" ColumnName="PK_iHoadonxuatID" />
+          <ScalarProperty Name="tNgaylap" ColumnName="tNgaylap" />
+          <ScalarProperty Name="sGhichu" ColumnName="sGhichu" />
+          <ScalarProperty Name="FK_iNguoidungID" ColumnName="FK_iNguoidungID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhuyenmaiModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.KhuyenmaiModel">
+        <MappingFragment StoreEntitySet="tblKhuyenmai">
+          <ScalarProperty Name="PK_iKhuyenmaiID" ColumnName="PK_iKhuyenmaiID" />
+          <ScalarProperty Name="fKhuyenmai" ColumnName="fKhuyenmai" />
+          <ScalarProperty Name="tNgaybatdau" ColumnName="tNgaybatdau" />
+          <ScalarProperty Name="tNgayketthuc" ColumnName="tNgayketthuc" />
+          <ScalarProperty Name="FK_iSanphamID" ColumnName="FK_iSanphamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiNguyenlieuModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.LoaiNguyenlieuModel">
+        <MappingFragment StoreEntitySet="tblLoaiNguyenlieu">
+          <ScalarProperty Name="PK_iLoaiNguyenlieuID" ColumnName="PK_iLoaiNguyenlieuID" />
+          <ScalarProperty Name="sTenLoaiNguyenlieu" ColumnName="sTenLoaiNguyenlieu" />
+          <ScalarProperty Name="sMota" ColumnName="sMota" />
+          <ScalarProperty Name="IsNgungKinhdoanh" ColumnName="IsNgungKinhdoanh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiSanphamModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.LoaiSanphamModel">
+        <MappingFragment StoreEntitySet="tblLoaiSanpham">
+          <ScalarProperty Name="PK_iLoaiSanphamID" ColumnName="PK_iLoaiSanphamID" />
+          <ScalarProperty Name="sTenLoaiSanpham" ColumnName="sTenLoaiSanpham" />
+          <ScalarProperty Name="sMota" ColumnName="sMota" />
+          <ScalarProperty Name="IsNgungKinhdoanh" ColumnName="IsNgungKinhdoanh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NguoidungModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.NguoidungModel">
+        <MappingFragment StoreEntitySet="tblNguoidung">
+          <ScalarProperty Name="PK_iNguoidungID" ColumnName="PK_iNguoidungID" />
+          <ScalarProperty Name="sTenNhanvien" ColumnName="sTenNhanvien" />
+          <ScalarProperty Name="sTennguoidung" ColumnName="sTennguoidung" />
+          <ScalarProperty Name="sMatkhau" ColumnName="sMatkhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NguyenlieuModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.NguyenlieuModel">
+        <MappingFragment StoreEntitySet="tblNguyenlieu">
+          <ScalarProperty Name="PK_iNguyenlieuID" ColumnName="PK_iNguyenlieuID" />
+          <ScalarProperty Name="sTenNguyenlieu" ColumnName="sTenNguyenlieu" />
+          <ScalarProperty Name="sMota" ColumnName="sMota" />
+          <ScalarProperty Name="iSoluong" ColumnName="iSoluong" />
+          <ScalarProperty Name="sXuatxu" ColumnName="sXuatxu" />
+          <ScalarProperty Name="sHinhanh" ColumnName="sHinhanh" />
+          <ScalarProperty Name="FK_iLoaiNguyenlieuID" ColumnName="FK_iLoaiNguyenlieuID" />
+          <ScalarProperty Name="isNgungcungcap" ColumnName="isNgungcungcap" />
+          <ScalarProperty Name="sDonvi" ColumnName="sDonvi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhanquyenModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.PhanquyenModel">
+        <MappingFragment StoreEntitySet="tblPhanquyen">
+          <ScalarProperty Name="PK_iPhanquyenID" ColumnName="PK_iPhanquyenID" />
+          <ScalarProperty Name="FK_iNguoidungID" ColumnName="FK_iNguoidungID" />
+          <ScalarProperty Name="FK_iQuyenID" ColumnName="FK_iQuyenID" />
+          <ScalarProperty Name="tNgaybatdau" ColumnName="tNgaybatdau" />
+          <ScalarProperty Name="tNgayketthuc" ColumnName="tNgayketthuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuyenModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.QuyenModel">
+        <MappingFragment StoreEntitySet="tblQuyen">
+          <ScalarProperty Name="PK_iQuyenID" ColumnName="PK_iQuyenID" />
+          <ScalarProperty Name="sTenQuyen" ColumnName="sTenQuyen" />
+          <ScalarProperty Name="sYnghia" ColumnName="sYnghia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SanphamModels">
+      <EntityTypeMapping TypeName="db_QuanSinhToModel.SanphamModel">
+        <MappingFragment StoreEntitySet="tblSanpham">
+          <ScalarProperty Name="PK_iSanphamID" ColumnName="PK_iSanphamID" />
+          <ScalarProperty Name="sTenSanpham" ColumnName="sTenSanpham" />
+          <ScalarProperty Name="sMota" ColumnName="sMota" />
+          <ScalarProperty Name="iSoluong" ColumnName="iSoluong" />
+          <ScalarProperty Name="sXuatxu" ColumnName="sXuatxu" />
+          <ScalarProperty Name="sHinhanh" ColumnName="sHinhanh" />
+          <ScalarProperty Name="FK_iLoaiSanphamID" ColumnName="FK_iLoaiSanphamID" />
+          <ScalarProperty Name="isNgungcungcap" ColumnName="isNgungcungcap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spBanggia_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spBanggia_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spBanggia_GetByPK" FunctionName="db_QuanSinhToModel.Store.spBanggia_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spBanggia_Insert" FunctionName="db_QuanSinhToModel.Store.spBanggia_Insert" />
+    <FunctionImportMapping FunctionImportName="spBanggia_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spBanggia_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonNhapNguyenlieu_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonNhapNguyenlieu_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonNhapNguyenlieu_GetByFK_iHoadonNhapNguyenlieuID" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonNhapNguyenlieu_GetByFK_iHoadonNhapNguyenlieuID" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonNhapNguyenlieu_GetByFK_iNguyenlieuID" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonNhapNguyenlieu_GetByFK_iNguyenlieuID" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonNhapNguyenlieu_GetByPK" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonNhapNguyenlieu_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonNhapNguyenlieu_Insert" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonNhapNguyenlieu_Insert" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonNhapNguyenlieu_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonNhapNguyenlieu_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonxuat_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonxuat_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonxuat_GetByFK_iHoadonxuatID" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonxuat_GetByFK_iHoadonxuatID" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonxuat_GetByFK_iSanphamID" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonxuat_GetByFK_iSanphamID" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonxuat_GetByPK" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonxuat_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonxuat_Insert" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonxuat_Insert" />
+    <FunctionImportMapping FunctionImportName="spChitietHoadonxuat_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spChitietHoadonxuat_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spChitietSanpham_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spChitietSanpham_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spChitietSanpham_GetByFK_iNguyenlieuID" FunctionName="db_QuanSinhToModel.Store.spChitietSanpham_GetByFK_iNguyenlieuID" />
+    <FunctionImportMapping FunctionImportName="spChitietSanpham_GetByFK_iSanphamID" FunctionName="db_QuanSinhToModel.Store.spChitietSanpham_GetByFK_iSanphamID" />
+    <FunctionImportMapping FunctionImportName="spChitietSanpham_GetByPK" FunctionName="db_QuanSinhToModel.Store.spChitietSanpham_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spChitietSanpham_Insert" FunctionName="db_QuanSinhToModel.Store.spChitietSanpham_Insert" />
+    <FunctionImportMapping FunctionImportName="spChitietSanpham_Update" FunctionName="db_QuanSinhToModel.Store.spChitietSanpham_Update" />
+    <FunctionImportMapping FunctionImportName="spHoadonNhapNguyenlieu_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spHoadonNhapNguyenlieu_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spHoadonNhapNguyenlieu_GetByFK_iNguoidungID" FunctionName="db_QuanSinhToModel.Store.spHoadonNhapNguyenlieu_GetByFK_iNguoidungID" />
+    <FunctionImportMapping FunctionImportName="spHoadonNhapNguyenlieu_GetByPK" FunctionName="db_QuanSinhToModel.Store.spHoadonNhapNguyenlieu_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spHoadonNhapNguyenlieu_Insert" FunctionName="db_QuanSinhToModel.Store.spHoadonNhapNguyenlieu_Insert" />
+    <FunctionImportMapping FunctionImportName="spHoadonNhapNguyenlieu_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spHoadonNhapNguyenlieu_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spHoadonxuat_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spHoadonxuat_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spHoadonxuat_GetByFK_iNguoidungID" FunctionName="db_QuanSinhToModel.Store.spHoadonxuat_GetByFK_iNguoidungID" />
+    <FunctionImportMapping FunctionImportName="spHoadonxuat_GetByPK" FunctionName="db_QuanSinhToModel.Store.spHoadonxuat_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spHoadonxuat_Insert" FunctionName="db_QuanSinhToModel.Store.spHoadonxuat_Insert" />
+    <FunctionImportMapping FunctionImportName="spHoadonxuat_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spHoadonxuat_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spKhuyenmai_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spKhuyenmai_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spKhuyenmai_GetByFK_iSanphamID" FunctionName="db_QuanSinhToModel.Store.spKhuyenmai_GetByFK_iSanphamID" />
+    <FunctionImportMapping FunctionImportName="spKhuyenmai_GetByPK" FunctionName="db_QuanSinhToModel.Store.spKhuyenmai_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spKhuyenmai_Insert" FunctionName="db_QuanSinhToModel.Store.spKhuyenmai_Insert" />
+    <FunctionImportMapping FunctionImportName="spKhuyenmai_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spKhuyenmai_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spLoaiNguyenlieu_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spLoaiNguyenlieu_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spLoaiNguyenlieu_GetByPK" FunctionName="db_QuanSinhToModel.Store.spLoaiNguyenlieu_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spLoaiNguyenlieu_Insert" FunctionName="db_QuanSinhToModel.Store.spLoaiNguyenlieu_Insert" />
+    <FunctionImportMapping FunctionImportName="spLoaiNguyenlieu_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spLoaiNguyenlieu_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spLoaiSanpham_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spLoaiSanpham_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spLoaiSanpham_GetByPK" FunctionName="db_QuanSinhToModel.Store.spLoaiSanpham_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spLoaiSanpham_Insert" FunctionName="db_QuanSinhToModel.Store.spLoaiSanpham_Insert" />
+    <FunctionImportMapping FunctionImportName="spLoaiSanpham_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spLoaiSanpham_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spNguoidung_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spNguoidung_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spNguoidung_GetByPK" FunctionName="db_QuanSinhToModel.Store.spNguoidung_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spNguoidung_Insert" FunctionName="db_QuanSinhToModel.Store.spNguoidung_Insert" />
+    <FunctionImportMapping FunctionImportName="spNguoidung_Update" FunctionName="db_QuanSinhToModel.Store.spNguoidung_Update" />
+    <FunctionImportMapping FunctionImportName="spNguyenlieu_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spNguyenlieu_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spNguyenlieu_GetByFK_iLoaiNguyenlieuID" FunctionName="db_QuanSinhToModel.Store.spNguyenlieu_GetByFK_iLoaiNguyenlieuID" />
+    <FunctionImportMapping FunctionImportName="spNguyenlieu_GetByPK" FunctionName="db_QuanSinhToModel.Store.spNguyenlieu_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spNguyenlieu_Insert" FunctionName="db_QuanSinhToModel.Store.spNguyenlieu_Insert" />
+    <FunctionImportMapping FunctionImportName="spNguyenlieu_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spNguyenlieu_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spPhanquyen_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spPhanquyen_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spPhanquyen_GetByFK_iNguoidungID" FunctionName="db_QuanSinhToModel.Store.spPhanquyen_GetByFK_iNguoidungID" />
+    <FunctionImportMapping FunctionImportName="spPhanquyen_GetByFK_iQuyenID" FunctionName="db_QuanSinhToModel.Store.spPhanquyen_GetByFK_iQuyenID" />
+    <FunctionImportMapping FunctionImportName="spPhanquyen_GetByPK" FunctionName="db_QuanSinhToModel.Store.spPhanquyen_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spPhanquyen_Insert" FunctionName="db_QuanSinhToModel.Store.spPhanquyen_Insert" />
+    <FunctionImportMapping FunctionImportName="spPhanquyen_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spPhanquyen_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spQuyen_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spQuyen_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spQuyen_GetByPK" FunctionName="db_QuanSinhToModel.Store.spQuyen_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spQuyen_Insert" FunctionName="db_QuanSinhToModel.Store.spQuyen_Insert" />
+    <FunctionImportMapping FunctionImportName="spQuyen_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spQuyen_UpdateByPK" />
+    <FunctionImportMapping FunctionImportName="spSanpham_DeleteByPK" FunctionName="db_QuanSinhToModel.Store.spSanpham_DeleteByPK" />
+    <FunctionImportMapping FunctionImportName="spSanpham_GetByFK_iLoaiSanphamID" FunctionName="db_QuanSinhToModel.Store.spSanpham_GetByFK_iLoaiSanphamID" />
+    <FunctionImportMapping FunctionImportName="spSanpham_GetByPK" FunctionName="db_QuanSinhToModel.Store.spSanpham_GetByPK" />
+    <FunctionImportMapping FunctionImportName="spSanpham_Insert" FunctionName="db_QuanSinhToModel.Store.spSanpham_Insert" />
+    <FunctionImportMapping FunctionImportName="spSanpham_UpdateByPK" FunctionName="db_QuanSinhToModel.Store.spSanpham_UpdateByPK" />
+  </EntityContainerMapping>
+</Mapping>

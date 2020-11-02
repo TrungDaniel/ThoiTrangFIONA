@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CCC8649-1749-48BC-84A6-2545FAB1C335}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanSinhTo.Models</RootNamespace>
+    <AssemblyName>QuanSinhTo.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanggiaModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChitietHoadonNhapNguyenlieuModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChitietHoadonxuatModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChitietSanphamModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HoadonNhapNguyenlieuModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HoadonxuatModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KhuyenmaiModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiNguyenlieuModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiSanphamModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NguoidungModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NguyenlieuModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhanquyenModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanSinhTo.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanSinhTo.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuanSinhTo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuanSinhTo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanSinhTo.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="QuyenModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SanphamModel.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spBanggia_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spChitietHoadonNhapNguyenlieu_GetByFK_iHoadonNhapNguyenlieuID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spChitietHoadonNhapNguyenlieu_GetByFK_iNguyenlieuID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spChitietHoadonNhapNguyenlieu_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spChitietHoadonxuat_GetByFK_iHoadonxuatID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spChitietHoadonxuat_GetByFK_iSanphamID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spChitietHoadonxuat_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spChitietSanpham_GetByFK_iNguyenlieuID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spChitietSanpham_GetByFK_iSanphamID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spChitietSanpham_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spHoadonNhapNguyenlieu_GetByFK_iNguoidungID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spHoadonNhapNguyenlieu_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spHoadonxuat_GetByFK_iNguoidungID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spHoadonxuat_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spKhuyenmai_GetByFK_iSanphamID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spKhuyenmai_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spLoaiNguyenlieu_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spLoaiSanpham_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spNguoidung_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spNguyenlieu_GetByFK_iLoaiNguyenlieuID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spNguyenlieu_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPhanquyen_GetByFK_iNguoidungID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPhanquyen_GetByFK_iQuyenID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spPhanquyen_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spQuyen_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSanpham_GetByFK_iLoaiSanphamID_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spSanpham_GetByPK_Result.cs">
+      <DependentUpon>QuanSinhTo.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="QuanSinhTo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanSinhTo.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="QuanSinhTo.edmx.diagram">
+      <DependentUpon>QuanSinhTo.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QuanSinhTo.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QuanSinhTo.Context.cs</LastGenOutput>
+      <DependentUpon>QuanSinhTo.edmx</DependentUpon>
+    </Content>
+    <Content Include="QuanSinhTo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanSinhTo.edmx</DependentUpon>
+      <LastGenOutput>QuanSinhTo.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
